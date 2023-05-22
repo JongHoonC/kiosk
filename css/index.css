@@ -1,0 +1,124 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0 20px;
+  background-color: #eaebe4;
+}
+.inrHeader {
+  display: flex;
+  align-items: center;
+  width: 50px;
+}
+
+.inrHeader > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 20px;
+}
+.inrHeader > h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+.menuArea {
+  width: 60%;
+}
+
+.orderArea {
+  width: 40%;
+  text-align: center;
+}
+
+.menuList {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  width: calc((100% / 3) - 10px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-sizing: border-box;
+}
+.orderBtn {
+  margin: 20px 0;
+  text-align: center;
+}
+button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #eaebe4;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #c7cab7;
+}
+label > p {
+  margin-top: 10px;
+}
+.price {
+  margin: 10px 0;
+}
+.orderArea {
+  position: relative;
+}
+.orderArea > h1 {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+table {
+  margin: 50px auto;
+}
+table > tbody > tr > th {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+table > tbody > tr > th:nth-child(1) {
+  width: 240px;
+}
+
+table > tbody > tr > th:nth-child(2) {
+  width: 100px;
+}
+
+table > tbody > tr > th:nth-child(3) {
+  width: 150px;
+}
+table > tbody > tr > th:nth-child(4) {
+  width: 100px;
+}
+select {
+  outline: none;
+}
+td {
+  padding: 10px;
+}
+[type="checkbox"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+/* [type="checkbox"] + img {
+  cursor: pointer;
+} */
+[type="checkbox"]:checked + img {
+  outline: 5px solid #000000;
+}
+.reLoad {
+  position: absolute;
+  bottom: 10px;
+}
+
+.count > span {
+  margin: 0 5px;
+}

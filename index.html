@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>키오스크</title>
+  </head>
+  <body>
+    <header>
+      <div class="inrHeader">
+        <img style="-webkit-user-drag: none" src="img/logo.png" />
+        <h1>MENU</h1>
+      </div>
+    </header>
+    <main>
+      <div class="menuArea">
+        <div class="menuList">
+          <div class="box">
+            <label for="menu1">
+              <input
+                type="checkbox"
+                name="menu"
+                id="menu1"
+                class="clearCheckBox"
+              />
+              <img style="-webkit-user-drag: none" src="img/돌체라떼.jpg" />
+              <p>돌체 라떼</p>
+              <p class="price">5600원</p>
+            </label>
+          </div>
+          <div class="box">
+            <label for="menu2">
+              <input
+                type="checkbox"
+                name="menu"
+                id="menu2"
+                class="clearCheckBox"
+              />
+              <img style="-webkit-user-drag: none" src="img/돌체콜드브루.jpg" />
+              <p>돌체 콜드 브루</p>
+              <p class="price">5800원</p>
+            </label>
+          </div>
+          <div class="box">
+            <label for="menu3">
+              <input
+                type="checkbox"
+                name="menu"
+                id="menu3"
+                class="clearCheckBox"
+              />
+              <img style="-webkit-user-drag: none" src="img/딸기요거트.jpg" />
+              <p>딸기 딜라이트 요거트 블렌디드</p>
+              <p class="price">6100원</p>
+            </label>
+          </div>
+        </div>
+        <div class="menuList">
+          <div class="box">
+            <label for="menu4">
+              <input
+                type="checkbox"
+                name="menu"
+                id="menu4"
+                class="clearCheckBox"
+              />
+              <img style="-webkit-user-drag: none" src="img/아메리카노.jpg" />
+              <p>아메리카노</p>
+              <p class="price">4500원</p>
+            </label>
+          </div>
+          <div class="box">
+            <label for="menu5">
+              <input
+                type="checkbox"
+                name="menu"
+                id="menu5"
+                class="clearCheckBox"
+              />
+              <img style="-webkit-user-drag: none" src="img/에스프레소.jpg" />
+              <p>에스프레소</p>
+              <p class="price">4000원</p>
+            </label>
+          </div>
+          <div class="box">
+            <label for="menu6">
+              <input
+                type="checkbox"
+                name="menu"
+                id="menu6"
+                class="clearCheckBox"
+              />
+              <img style="-webkit-user-drag: none" src="img/자몽티.jpg" />
+              <p>자몽 허니 블랙 티</p>
+              <p class="price">5300원</p>
+            </label>
+          </div>
+        </div>
+        <div class="menuList">
+          <div class="box">
+            <label for="menu7">
+              <input
+                type="checkbox"
+                name="menu"
+                id="menu7"
+                class="clearCheckBox"
+              />
+              <img style="-webkit-user-drag: none" src="img/자바칩.jpg" />
+              <p>자바 칩 프라푸치노</p>
+              <p class="price">6300원</p>
+            </label>
+          </div>
+          <div class="box">
+            <label for="menu8">
+              <input
+                type="checkbox"
+                name="menu"
+                id="menu8"
+                class="clearCheckBox"
+              />
+              <img
+                style="-webkit-user-drag: none"
+                src="img/카라멜마키아또.jpg"
+              />
+              <p>카라멜 마끼아또</p>
+              <p class="price">5600원</p>
+            </label>
+          </div>
+          <div class="box">
+            <label for="menu9">
+              <input
+                type="checkbox"
+                name="menu"
+                id="menu9"
+                class="clearCheckBox"
+              />
+              <img style="-webkit-user-drag: none" src="img/카페라떼.jpg" />
+              <p>카페 라떼</p>
+              <p class="price">5000원</p>
+            </label>
+          </div>
+        </div>
+        <div class="orderBtn">
+          <button id="oneClick" onclick="order(),setMinus()">주문 추가</button>
+          <button onclick="clearCheck()">취소 하기</button>
+        </div>
+      </div>
+      <div class="orderArea">
+        <h1>주문 내역</h1>
+        <div>
+          <span>총 금액 : </span>
+          <span id="resultPrice">0 원</span>
+          <button onclick="getOrderList()">주문하기</button>
+          <table id="orderItem">
+            <tr>
+              <th>메뉴</th>
+              <th>수량</th>
+              <th>가격</th>
+              <th>삭제</th>
+            </tr>
+          </table>
+        </div>
+        <button class="reLoad" onclick="reloadBtn()">초기화</button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
